@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:WpfApplication2"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
+        <Color x:Key="Color2">Gray</Color>
+
     </Application.Resources>
 </Application>

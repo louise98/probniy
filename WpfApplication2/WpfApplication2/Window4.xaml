@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApplication2.Window4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication2"
+        mc:Ignorable="d"
+        Title="Activity level" Height="500" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,1,0,-1">
+        <Button x:Name="button" Content="Next" HorizontalAlignment="Center" Margin="0,394,0,0" Width="100" Height="29" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="label" Content="How active are you?" HorizontalAlignment="Left" Margin="46,42,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <RadioButton x:Name="radioButton" Content="Very active" HorizontalAlignment="Left" Margin="46,91,0,0" VerticalAlignment="Top" Height="21" Width="141" FontSize="14"/>
+        <RadioButton x:Name="radioButton1" Content="Active" HorizontalAlignment="Left" Margin="46,161,0,0" VerticalAlignment="Top" FontSize="14" Width="141"/>
+        <RadioButton x:Name="radioButton2" Content="Lightly active" HorizontalAlignment="Left" Margin="46,236,0,0" VerticalAlignment="Top" FontSize="14" Width="141"/>
+        <RadioButton x:Name="radioButton3" Content="Not very active" HorizontalAlignment="Left" Margin="46,311,0,0" VerticalAlignment="Top" Height="23" Width="141" FontSize="14"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="44,112,0,0" TextWrapping="Wrap" Text="Spend most of the day doing heavy physical activity (e.g. bike messenger, carpenter)" VerticalAlignment="Top" Height="44" Width="261" Foreground="Gray"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="38" Margin="46,180,0,0" TextWrapping="Wrap" Text="Spend a god part of the day doing some physical activity(e.g. food server, postal carrier)" VerticalAlignment="Top" Width="259" Foreground="Gray"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="44,255,0,0" TextWrapping="Wrap" Text="Spend a good part of the day on your feet(e.g. teacher salesperson)" VerticalAlignment="Top" Height="36" Width="261" Foreground="Gray"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="44,334,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="261" Background="White" Foreground="Gray" Text="Spend most of the day sitting(e.g. bank teller. desk job)"/>
+
+    </Grid>
+</Window>
