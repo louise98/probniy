@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApplication2.Window9"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication2"
+        mc:Ignorable="d"
+        Title="Add food" Height="500" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="165,76,0,0" VerticalAlignment="Top" Width="134" Height="32"/>
+        <DatePicker HorizontalAlignment="Left" Margin="165,195,0,0" VerticalAlignment="Top" Height="33" Width="140"/>
+        <Button x:Name="button" Content="Add" HorizontalAlignment="Left" Margin="107,397,0,0" VerticalAlignment="Top" Width="116" Height="33" FontSize="14"/>
+        <Button x:Name="button1" Content="New meal" HorizontalAlignment="Left" Margin="70,136,0,0" VerticalAlignment="Top" Width="187" Height="29" FontSize="14"/>
+        <Label x:Name="label" Content="Choose existing" HorizontalAlignment="Left" Margin="26,76,0,0" VerticalAlignment="Top" Height="32" Width="134" FontSize="16"/>
+        <Label x:Name="label1" Content="Set the date" HorizontalAlignment="Left" Margin="26,195,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.488,0.623" Width="128" Height="38" FontSize="16"/>
+    </Grid>
+</Window>

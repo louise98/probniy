@@ -26,7 +26,7 @@ namespace WpfApplication2
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            Window4 w = new Window4();
+            Window6 w = new Window6();
             w.Show();
 
         }

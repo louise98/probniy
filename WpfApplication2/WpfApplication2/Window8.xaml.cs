@@ -10,32 +10,41 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfApplication2
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Window2.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Window8 : Window
     {
-        public MainWindow()
+        public Window8()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, RoutedEventArgs e)
-        {
-            
-            Window2 w = new Window2();
-            w.Show();
-           //this.Hide();
-        }
-
         private void button_Click(object sender, RoutedEventArgs e)
         {
+            
+
+
+        }
+
+        private void comboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
             Window7 w = new Window7();
+            w.Show();
+        }
+
+        private void button4_Click(object sender, RoutedEventArgs e)
+        {
+            Window9 w = new Window9();
             w.Show();
         }
     }

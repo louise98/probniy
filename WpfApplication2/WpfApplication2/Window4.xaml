@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Activity level" Height="500" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,1,0,-1">
-        <Button x:Name="button" Content="Next" HorizontalAlignment="Center" Margin="0,394,0,0" Width="100" Height="29" VerticalAlignment="Top" FontSize="14"/>
+        <Button x:Name="button" Content="Next" HorizontalAlignment="Center" Margin="0,394,0,0" Width="100" Height="29" VerticalAlignment="Top" FontSize="14" Click="button_Click"/>
         <Label x:Name="label" Content="How active are you?" HorizontalAlignment="Left" Margin="46,42,0,0" VerticalAlignment="Top" FontSize="18"/>
         <RadioButton x:Name="radioButton" Content="Very active" HorizontalAlignment="Left" Margin="46,91,0,0" VerticalAlignment="Top" Height="21" Width="141" FontSize="14"/>
         <RadioButton x:Name="radioButton1" Content="Active" HorizontalAlignment="Left" Margin="46,161,0,0" VerticalAlignment="Top" FontSize="14" Width="141"/>

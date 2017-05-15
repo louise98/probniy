@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfApplication2.Window6"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication2"
+        mc:Ignorable="d"
+        Title="You" Height="500" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button x:Name="button" Content="Next" HorizontalAlignment="Center" Margin="0,394,0,0" Width="101" Height="29" VerticalAlignment="Top" FontSize="14" Click="button_Click"/>
+        <Label x:Name="label" Content="Height" HorizontalAlignment="Left" Margin="54,66,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label x:Name="label_Copy" Content="Current weight" HorizontalAlignment="Left" Margin="54,152,0,0" VerticalAlignment="Top" FontSize="18" RenderTransformOrigin="0.505,0.962"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="54,105,0,0" TextWrapping="Wrap" Text="e.g. 180cm" VerticalAlignment="Top" Width="120" Foreground="Gray"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="54,191,0,0" TextWrapping="Wrap" Text="e.g. 80kg" VerticalAlignment="Top" Width="120" Foreground="Gray"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="54,310,0,0" TextWrapping="Wrap" Text="We use this information to calculate an accurate callorie goal for you" VerticalAlignment="Top" Height="40" Width="241" Foreground="Gray"/>
+        <Label x:Name="label_Copy1" Content="Goal weight" HorizontalAlignment="Left" Margin="54,243,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="23" Margin="54,282,0,0" TextWrapping="Wrap" Text="0 kg" VerticalAlignment="Top" Width="120" Foreground="Gray" TextChanged="textBox_Copy_TextChanged"/>
+
+    </Grid>
+</Window>
