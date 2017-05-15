@@ -10,11 +10,19 @@
         <Color x:Key="Color1">Gray</Color>
         <Color x:Key="Color_Black">Black</Color>
     </Window.Resources>
-    <Grid>
-        <Button x:Name="button" Content="Next" HorizontalAlignment="Center" Margin="0,394,0,0" Width="101" Height="29" Click="button_Click" VerticalAlignment="Top" FontSize="14"/>
-        <Label x:Name="label" Content="Your name" HorizontalAlignment="Left" Margin="26,107,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <Label x:Name="label1" Content="Your password" HorizontalAlignment="Left" Margin="24,150,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <Label x:Name="label2" Content="Repeat password" HorizontalAlignment="Left" Margin="24,191,0,0" VerticalAlignment="Top" FontSize="16"/>
+    <Grid Background="AntiqueWhite">
+        <Button x:Name="button" Content="Next" HorizontalAlignment="Center" Margin="0,394,0,0" Width="101" Height="29" Click="button_Click" VerticalAlignment="Top" FontSize="14" Foreground="Brown">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFB69898" Offset="0"/>
+                    <GradientStop Color="Snow" Offset="1"/>
+                    <GradientStop Color="#FFD9C7C7" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="label" Content="Your name" HorizontalAlignment="Left" Margin="26,107,0,0" VerticalAlignment="Top" FontSize="16" Foreground="Brown"/>
+        <Label x:Name="label1" Content="Your password" HorizontalAlignment="Left" Margin="24,150,0,0" VerticalAlignment="Top" FontSize="16" Foreground="Brown"/>
+        <Label x:Name="label2" Content="Repeat password" HorizontalAlignment="Left" Margin="24,191,0,0" VerticalAlignment="Top" FontSize="16" Foreground="Brown"/>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="164,113,0,0" TextWrapping="Wrap" Text="ex.: Michael" VerticalAlignment="Top" Width="120" GotFocus="textBox_GotFocus" LostFocus="textBox_LostFocus">
             <TextBox.Resources>
                 <Color x:Key="Color3">Gray</Color>

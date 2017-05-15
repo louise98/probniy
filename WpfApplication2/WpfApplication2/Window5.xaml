@@ -6,12 +6,20 @@
         xmlns:local="clr-namespace:WpfApplication2"
         mc:Ignorable="d"
         Title="You" Height="500" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
-    <Grid>
-        <Button x:Name="button" Content="Next" HorizontalAlignment="Center" Margin="0,394,0,0" Width="101" Height="29" VerticalAlignment="Top" FontSize="14" Click="button_Click"/>
-        <Label x:Name="label" Content="Gender" HorizontalAlignment="Left" Margin="61,52,0,0" VerticalAlignment="Top" FontSize="18"/>
-        <RadioButton x:Name="radioButton" Content="Male" HorizontalAlignment="Left" Margin="60,103,0,0" VerticalAlignment="Top" Height="21" Width="141" FontSize="14"/>
-        <RadioButton x:Name="radioButton1" Content="Female" HorizontalAlignment="Left" Margin="60,147,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <Label x:Name="label_Copy" Content="Birthdate" HorizontalAlignment="Left" Margin="61,196,0,0" VerticalAlignment="Top" FontSize="18"/>
+    <Grid Background="AntiqueWhite">
+        <Button x:Name="button" Content="Next" HorizontalAlignment="Center" Margin="0,394,0,0" Width="101" Height="29" VerticalAlignment="Top" FontSize="14" Click="button_Click" Foreground="Brown">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFB69898" Offset="0"/>
+                    <GradientStop Color="Snow" Offset="1"/>
+                    <GradientStop Color="#FFD9C7C7" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="label" Content="Gender" HorizontalAlignment="Left" Margin="61,52,0,0" VerticalAlignment="Top" FontSize="18" Foreground="Brown"/>
+        <RadioButton x:Name="radioButton" Content="Male" HorizontalAlignment="Left" Margin="60,103,0,0" VerticalAlignment="Top" Height="21" Width="141" FontSize="14" Foreground="Brown"/>
+        <RadioButton x:Name="radioButton1" Content="Female" HorizontalAlignment="Left" Margin="60,147,0,0" VerticalAlignment="Top" FontSize="14" Foreground="Brown"/>
+        <Label x:Name="label_Copy" Content="Birthdate" HorizontalAlignment="Left" Margin="61,196,0,0" VerticalAlignment="Top" FontSize="18" Foreground="Brown"/>
         <DatePicker HorizontalAlignment="Left" Margin="60,235,0,0" VerticalAlignment="Top" Width="189" Height="31"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="60,271,0,0" TextWrapping="Wrap" Text="We use this information to calculate an accurate callorie goal for you" VerticalAlignment="Top" Height="40" Width="241" Foreground="Gray"/>
 

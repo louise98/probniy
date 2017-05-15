@@ -6,12 +6,36 @@
         xmlns:local="clr-namespace:WpfApplication2"
         mc:Ignorable="d"
         Title="Add food" Height="500" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
-    <Grid>
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="165,76,0,0" VerticalAlignment="Top" Width="134" Height="32"/>
+    <Grid Background="AntiqueWhite">
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="165,76,0,0" VerticalAlignment="Top" Width="134" Height="32">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFB69898" Offset="0"/>
+                    <GradientStop Color="Snow" Offset="1"/>
+                    <GradientStop Color="#FFD9C7C7" Offset="0.5"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
         <DatePicker HorizontalAlignment="Left" Margin="165,195,0,0" VerticalAlignment="Top" Height="33" Width="140"/>
-        <Button x:Name="button" Content="Add" HorizontalAlignment="Left" Margin="107,397,0,0" VerticalAlignment="Top" Width="116" Height="33" FontSize="14"/>
-        <Button x:Name="button1" Content="New meal" HorizontalAlignment="Left" Margin="70,136,0,0" VerticalAlignment="Top" Width="187" Height="29" FontSize="14"/>
-        <Label x:Name="label" Content="Choose existing" HorizontalAlignment="Left" Margin="26,76,0,0" VerticalAlignment="Top" Height="32" Width="134" FontSize="16"/>
-        <Label x:Name="label1" Content="Set the date" HorizontalAlignment="Left" Margin="26,195,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.488,0.623" Width="128" Height="38" FontSize="16"/>
+        <Button x:Name="button" Content="Add" HorizontalAlignment="Left" Margin="107,397,0,0" VerticalAlignment="Top" Width="116" Height="33" FontSize="14" Foreground="Brown">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFB69898" Offset="0"/>
+                    <GradientStop Color="Snow" Offset="1"/>
+                    <GradientStop Color="#FFD9C7C7" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1" Content="New meal" HorizontalAlignment="Left" Margin="70,136,0,0" VerticalAlignment="Top" Width="187" Height="29" FontSize="14" Foreground="Brown">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFB69898" Offset="0"/>
+                    <GradientStop Color="Snow" Offset="1"/>
+                    <GradientStop Color="#FFD9C7C7" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="label" Content="Choose existing" HorizontalAlignment="Left" Margin="26,76,0,0" VerticalAlignment="Top" Height="32" Width="134" FontSize="16" Foreground="Brown"/>
+        <Label x:Name="label1" Content="Set the date" HorizontalAlignment="Left" Margin="26,195,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.488,0.623" Width="128" Height="38" FontSize="16" Foreground="Brown"/>
     </Grid>
 </Window>

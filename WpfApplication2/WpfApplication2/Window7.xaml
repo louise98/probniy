@@ -6,12 +6,44 @@
         xmlns:local="clr-namespace:WpfApplication2"
         mc:Ignorable="d"
         Title="Home" Height="500" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
-    <Grid>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="35" Margin="40,35,0,0" TextWrapping="Wrap" Text="Welcome back, name!" VerticalAlignment="Top" Width="202" FontSize="18"/>
-        <Button x:Name="button_Copy" Content="Progress" HorizontalAlignment="Right" Margin="0,378,36,64" Width="118" Height="30" FontSize="14" Click="button_Click" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <Button x:Name="button1_Copy" Content="History" HorizontalAlignment="Left" Margin="40,377,0,0" VerticalAlignment="Top" Width="118" Height="30" FontSize="14"/>
-        <Button x:Name="button4" Content="Settings" HorizontalAlignment="Left" Margin="190,310,0,0" VerticalAlignment="Top" Width="118" Height="32" FontSize="14" Click="button4_Click"/>
-        <Button x:Name="button" Content="Add a meal" HorizontalAlignment="Left" Margin="40,308,0,0" VerticalAlignment="Top" Width="118" FontSize="14" Height="32" Click="button_Click_1"/>
+    <Grid Background="AntiqueWhite">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="35" Margin="40,35,0,0" TextWrapping="Wrap" Text="Welcome back, name!" VerticalAlignment="Top" Width="202" FontSize="18" Foreground="Brown"/>
+        <Button x:Name="button1_Copy" Content="History" HorizontalAlignment="Left" Margin="40,377,0,0" VerticalAlignment="Top" Width="118" Height="30" FontSize="14" Foreground="Brown">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFB69898" Offset="0"/>
+                    <GradientStop Color="Snow" Offset="1"/>
+                    <GradientStop Color="#FFD9C7C7" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button4" Content="Settings" HorizontalAlignment="Left" Margin="190,310,0,0" VerticalAlignment="Top" Width="118" Height="32" FontSize="14" Click="button4_Click" Foreground="Brown">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFB69898" Offset="0"/>
+                    <GradientStop Color="Snow" Offset="1"/>
+                    <GradientStop Color="#FFD9C7C7" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button" Content="Add a meal" HorizontalAlignment="Left" Margin="40,308,0,0" VerticalAlignment="Top" Width="118" FontSize="14" Height="32" Click="button_Click_1" Foreground="Brown">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFB69898" Offset="0"/>
+                    <GradientStop Color="Snow" Offset="1"/>
+                    <GradientStop Color="#FFD9C7C7" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button1_Copy1" Content="Progress" HorizontalAlignment="Left" Margin="190,377,0,0" VerticalAlignment="Top" Width="118" Height="30" FontSize="14" Foreground="Brown">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFB69898" Offset="0"/>
+                    <GradientStop Color="Snow" Offset="1"/>
+                    <GradientStop Color="#FFD9C7C7" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>
