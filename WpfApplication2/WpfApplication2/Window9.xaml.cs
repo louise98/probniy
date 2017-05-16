@@ -41,5 +41,11 @@ namespace WpfApplication2
             Window7 w = new Window7();
             w.Show();
         }
+
+        private void button_Copy_Click(object sender, RoutedEventArgs e)
+        {
+            Window12 w = new Window12();
+            w.Show();
+        }
     }
 }

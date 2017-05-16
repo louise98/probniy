@@ -47,5 +47,17 @@ namespace WpfApplication2
             Window9 w = new Window9();
             w.Show();
         }
+
+        private void button1_Copy1_Click(object sender, RoutedEventArgs e)
+        {
+            Window10 w = new Window10();
+            w.Show();
+        }
+
+        private void button1_Copy_Click(object sender, RoutedEventArgs e)
+        {
+            Window11 w = new Window11();
+            w.Show();
+        }
     }
 }

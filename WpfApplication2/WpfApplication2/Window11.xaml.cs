@@ -17,9 +17,9 @@ namespace WpfApplication2
     /// <summary>
     /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Window11 : Window
     {
-        public Window1()
+        public Window11()
         {
             InitializeComponent();
         }

@@ -63,8 +63,14 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Window1.xaml.cs">
-      <DependentUpon>Window1.xaml</DependentUpon>
+    <Compile Include="Window12.xaml.cs">
+      <DependentUpon>Window12.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window11.xaml.cs">
+      <DependentUpon>Window11.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window10.xaml.cs">
+      <DependentUpon>Window10.xaml</DependentUpon>
     </Compile>
     <Compile Include="Window9.xaml.cs">
       <DependentUpon>Window9.xaml</DependentUpon>
@@ -102,7 +108,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Window1.xaml">
+    <Page Include="Window12.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Window11.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Window10.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

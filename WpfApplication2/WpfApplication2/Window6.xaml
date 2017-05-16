@@ -16,13 +16,22 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Label x:Name="label" Content="Height" HorizontalAlignment="Left" Margin="54,66,0,0" VerticalAlignment="Top" FontSize="18" Foreground="Brown"/>
-        <Label x:Name="label_Copy" Content="Current weight" HorizontalAlignment="Left" Margin="54,152,0,0" VerticalAlignment="Top" FontSize="18" RenderTransformOrigin="0.505,0.962" Foreground="Brown"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="54,105,0,0" TextWrapping="Wrap" Text="e.g. 180cm" VerticalAlignment="Top" Width="120" Foreground="Gray"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="54,191,0,0" TextWrapping="Wrap" Text="e.g. 80kg" VerticalAlignment="Top" Width="120" Foreground="Gray"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="54,310,0,0" TextWrapping="Wrap" Text="We use this information to calculate an accurate callorie goal for you" VerticalAlignment="Top" Height="40" Width="241" Foreground="Gray"/>
-        <Label x:Name="label_Copy1" Content="Goal weight" HorizontalAlignment="Left" Margin="54,243,0,0" VerticalAlignment="Top" FontSize="18" Foreground="Brown"/>
-        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="23" Margin="54,282,0,0" TextWrapping="Wrap" Text="0 kg" VerticalAlignment="Top" Width="120" Foreground="Gray" TextChanged="textBox_Copy_TextChanged"/>
+        <Label x:Name="label" Content="Height" HorizontalAlignment="Left" Margin="54,80,0,0" VerticalAlignment="Top" FontSize="18" Foreground="Brown"/>
+        <Label x:Name="label_Copy" Content="Current weight" HorizontalAlignment="Left" Margin="54,166,0,0" VerticalAlignment="Top" FontSize="18" RenderTransformOrigin="0.505,0.962" Foreground="Brown"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="54,119,0,0" TextWrapping="Wrap" Text="e.g. 180cm" VerticalAlignment="Top" Width="120" Foreground="Gray"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="54,205,0,0" TextWrapping="Wrap" Text="e.g. 80kg" VerticalAlignment="Top" Width="120" Foreground="Gray"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="54,324,0,0" TextWrapping="Wrap" Text="We use this information to calculate an accurate callorie goal for you" VerticalAlignment="Top" Height="40" Width="241" Foreground="Gray"/>
+        <Label x:Name="label_Copy1" Content="Goal weight" HorizontalAlignment="Left" Margin="54,257,0,0" VerticalAlignment="Top" FontSize="18" Foreground="Brown"/>
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="23" Margin="54,296,0,0" TextWrapping="Wrap" Text="0 kg" VerticalAlignment="Top" Width="120" Foreground="Gray" TextChanged="textBox_Copy_TextChanged"/>
+        <Button x:Name="button_Copy" Content="Back" HorizontalAlignment="Left" Margin="24,34,0,0" Width="65" Height="24" Click="button_Click" VerticalAlignment="Top" FontSize="14" Foreground="Brown">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFB69898" Offset="0"/>
+                    <GradientStop Color="Snow" Offset="1"/>
+                    <GradientStop Color="#FFD9C7C7" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>

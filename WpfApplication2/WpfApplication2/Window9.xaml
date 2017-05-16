@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Add food" Height="500" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid Background="AntiqueWhite">
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="165,76,0,0" VerticalAlignment="Top" Width="134" Height="32">
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="166,96,0,0" VerticalAlignment="Top" Width="134" Height="32">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFB69898" Offset="0"/>
@@ -16,7 +16,7 @@
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
-        <DatePicker HorizontalAlignment="Left" Margin="165,195,0,0" VerticalAlignment="Top" Height="33" Width="140"/>
+        <DatePicker HorizontalAlignment="Left" Margin="166,215,0,0" VerticalAlignment="Top" Height="33" Width="140"/>
         <Button x:Name="button" Content="Add" HorizontalAlignment="Left" Margin="107,397,0,0" VerticalAlignment="Top" Width="116" Height="33" FontSize="14" Foreground="Brown">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
@@ -26,7 +26,9 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="button1" Content="New meal" HorizontalAlignment="Left" Margin="70,136,0,0" VerticalAlignment="Top" Width="187" Height="29" FontSize="14" Foreground="Brown">
+        <Label x:Name="label" Content="Choose existing" HorizontalAlignment="Left" Margin="27,96,0,0" VerticalAlignment="Top" Height="32" Width="134" FontSize="16" Foreground="Brown"/>
+        <Label x:Name="label1" Content="Set the date" HorizontalAlignment="Left" Margin="27,215,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.488,0.623" Width="128" Height="38" FontSize="16" Foreground="Brown"/>
+        <Button x:Name="button_Copy" Content="New meal" HorizontalAlignment="Left" Margin="205,28,0,0" VerticalAlignment="Top" Width="116" Height="33" FontSize="14" Foreground="Brown" Click="button_Copy_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFB69898" Offset="0"/>
@@ -35,7 +37,33 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Label x:Name="label" Content="Choose existing" HorizontalAlignment="Left" Margin="26,76,0,0" VerticalAlignment="Top" Height="32" Width="134" FontSize="16" Foreground="Brown"/>
-        <Label x:Name="label1" Content="Set the date" HorizontalAlignment="Left" Margin="26,195,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.488,0.623" Width="128" Height="38" FontSize="16" Foreground="Brown"/>
+        <Button x:Name="button_Copy1" Content="Back" HorizontalAlignment="Left" Margin="24,34,0,0" Width="65" Height="24" Click="button_Click" VerticalAlignment="Top" FontSize="14" Foreground="Brown">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFB69898" Offset="0"/>
+                    <GradientStop Color="Snow" Offset="1"/>
+                    <GradientStop Color="#FFD9C7C7" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="label1_Copy" Content="Amount consumed" HorizontalAlignment="Left" Margin="12,155,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.488,0.623" Width="149" Height="37" FontSize="16" Foreground="Brown"/>
+        <ComboBox x:Name="comboBox_Copy" HorizontalAlignment="Left" Margin="166,96,0,0" VerticalAlignment="Top" Width="134" Height="32">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFB69898" Offset="0"/>
+                    <GradientStop Color="Snow" Offset="1"/>
+                    <GradientStop Color="#FFD9C7C7" Offset="0.5"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+        <ComboBox x:Name="comboBox_Copy1" HorizontalAlignment="Left" Margin="166,155,0,0" VerticalAlignment="Top" Width="134" Height="29" RenderTransformOrigin="0.477,2.379">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFB69898" Offset="0"/>
+                    <GradientStop Color="Snow" Offset="1"/>
+                    <GradientStop Color="#FFD9C7C7" Offset="0.5"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
     </Grid>
 </Window>

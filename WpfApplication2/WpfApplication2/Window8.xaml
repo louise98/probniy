@@ -15,7 +15,16 @@
         <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="36" Margin="180,160,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textBox_Copy1" HorizontalAlignment="Left" Height="35" Margin="180,227,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
         <DatePicker HorizontalAlignment="Left" Margin="180,303,0,0" VerticalAlignment="Top" Height="43" Width="120"/>
-        <Button x:Name="button" Content="Save" HorizontalAlignment="Center" Margin="121.5,394,121.5,0" Width="101" Height="29" VerticalAlignment="Top" FontSize="14" Click="button_Click" Foreground="Brown">
+        <Button x:Name="button" Content="Save" HorizontalAlignment="Left" Margin="121.5,394,0,0" Width="101" Height="29" VerticalAlignment="Top" FontSize="14" Click="button_Click" Foreground="Brown">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFB69898" Offset="0"/>
+                    <GradientStop Color="Snow" Offset="1"/>
+                    <GradientStop Color="#FFD9C7C7" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button_Copy" Content="Back" HorizontalAlignment="Left" Margin="24,34,0,0" Width="65" Height="24" Click="button_Click" VerticalAlignment="Top" FontSize="14" Foreground="Brown">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFB69898" Offset="0"/>
