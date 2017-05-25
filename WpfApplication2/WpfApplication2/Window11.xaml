@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication2"
         mc:Ignorable="d"
-        Title="Your history" Height="500" Width="516.5" ResizeMode="NoResize" Background="AntiqueWhite" WindowStartupLocation="CenterScreen">
+        Title="Your history" Height="500" Width="516.5" ResizeMode="NoResize" Background="AntiqueWhite" WindowStartupLocation="CenterScreen" Icon="leopard21.jpg">
     <Grid>
         <Button x:Name="button_Copy1" Content="Back" HorizontalAlignment="Left" Margin="24,34,0,0" Width="65" Height="24" VerticalAlignment="Top" FontSize="14" Foreground="Brown" Click="button_Copy1_Click">
             <Button.Background>

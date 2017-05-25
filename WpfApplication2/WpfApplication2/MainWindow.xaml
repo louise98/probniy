@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication2"
         mc:Ignorable="d"
-        Title="Panterra" Height="500" Width="350" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="Strong" Height="500" Width="350" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="leopard21.jpg">
     <Grid Cursor="Arrow" Background="AntiqueWhite">
         <Button x:Name="button" Content="Sign in" Margin="110,397,0,0" Width="120" RenderTransformOrigin="0.571,0.649" VerticalAlignment="Top" HorizontalAlignment="Left" MinWidth="20" MinHeight="20" FontSize="14" Click="button_Click" Foreground="Brown">
             <Button.Background>
@@ -27,8 +27,7 @@
             </Button.Background>
         </Button>
         <TextBox x:Name="nameTextBox" HorizontalAlignment="Left" Height="23" Margin="139,308,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140"/>
-        <Image x:Name="image" Height="116" Margin="100,79,100,0" VerticalAlignment="Top" Width="144" Source="x_dbf6ed41.jpeg" HorizontalAlignment="Center" Stretch="Fill"/>
-        <Image x:Name="image1" HorizontalAlignment="Center" Height="57" Margin="39,199,39,0" VerticalAlignment="Top" Width="266" Source="x_dbf6ed41.jpeg" Stretch="Fill"/>
+        <Image x:Name="image" Height="156" Margin="38,91,36,0" VerticalAlignment="Top" Width="270" Source="leopard21.jpg" HorizontalAlignment="Center"/>
         <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Height="23" Margin="139,345,0,0" VerticalAlignment="Top" Width="140"/>
         <Label x:Name="label" Content="Name" HorizontalAlignment="Left" Margin="56,308,0,0" VerticalAlignment="Top" FontSize="16" Foreground="Brown"/>
         <Label x:Name="label1" Content="Password" HorizontalAlignment="Left" Margin="46,342,0,0" VerticalAlignment="Top" FontSize="16" Foreground="Brown"/>

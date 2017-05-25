@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication2"
         mc:Ignorable="d"
-        Title="Add food" Height="500" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="Add food" Height="500" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="leopard21.jpg">
     <Grid Background="AntiqueWhite">
         <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="166,96,0,0" VerticalAlignment="Top" Width="134" Height="32">
             <ComboBox.Background>

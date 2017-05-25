@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication2"
         mc:Ignorable="d"
-        Title="Settings" Height="500" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="Settings" Height="500" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="leopard21.jpg">
     <Grid Background="AntiqueWhite">
         <Label x:Name="label" Content="User name" HorizontalAlignment="Left" Margin="40,97,0,0" VerticalAlignment="Top" Height="37" Width="123" FontSize="16" Foreground="Brown"/>
         <Label x:Name="label_Copy" Content="Height" HorizontalAlignment="Left" Margin="40,160,0,0" VerticalAlignment="Top" Height="36" Width="123" FontSize="16" Foreground="Brown"/>

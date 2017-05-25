@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication2"
         mc:Ignorable="d"
-        Title="Goal" Height="500" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="Goal" Height="500" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="leopard21.jpg">
     <Grid Background="AntiqueWhite">
         <Button x:Name="button" Content="Next" HorizontalAlignment="Center" Margin="0,394,0,0" Width="101" Height="29" VerticalAlignment="Top" FontSize="14" Click="button_Click" Foreground="Brown">
             <Button.Background>

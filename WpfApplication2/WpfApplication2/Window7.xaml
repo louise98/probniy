@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication2"
         mc:Ignorable="d"
-        Title="Home" Height="500" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="Home" Height="500" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="leopard21.jpg">
     <Grid Background="AntiqueWhite">
         <TextBlock x:Name="welcomeLabel" HorizontalAlignment="Left" Height="35" Margin="40,35,0,0" TextWrapping="Wrap" Text="Welcome back, name!" VerticalAlignment="Top" Width="202" FontSize="18" Foreground="Brown"/>
         <Button x:Name="button1_Copy" Content="History" HorizontalAlignment="Left" Margin="40,357,0,0" VerticalAlignment="Top" Width="118" Height="30" FontSize="14" Foreground="Brown" Click="button1_Copy_Click">
