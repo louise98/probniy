@@ -26,25 +26,44 @@ namespace WpfApplication2
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            Window3 w = new Window3();
-            w.Show();
+            String name = nameTextBox.Text;
+            String password = passwordBox.Password;
+            String repeatPassword = repeatPasswordBox.Password;
+            if(HelperFunctions.validateUsername(name) && 
+                HelperFunctions.validatePassword(password) &&
+                password == repeatPassword)
+            {
+                Data.newUserName = name;
+                Data.newUserPassword = password;
+                Window3 w = new Window3();
+                w.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Invalid data!");
+            }
+            
         }
 
 
         private void textBox_GotFocus(object sender, RoutedEventArgs e)
         {
             var bc = new BrushConverter();
-            textBox.Foreground = (Brush)bc.ConvertFrom("#FF000000");
-            textBox.Text = "";
+            nameTextBox.Foreground = (Brush)bc.ConvertFrom("#FF000000");
+            nameTextBox.Text = "";
         }
 
         private void textBox_LostFocus(object sender, RoutedEventArgs e)
         {
-            if (textBox.Text == "") {
-                textBox.Text = "ex.: Michael";
-                var bc = new BrushConverter();
-                textBox.Foreground = (Brush)bc.ConvertFrom("#FF808080");
-            }
+            
+        }
+
+        private void button_Copy_Click(object sender, RoutedEventArgs e)
+        {
+            var win = new MainWindow();
+            win.Show();
+            this.Close();
         }
     }
 }

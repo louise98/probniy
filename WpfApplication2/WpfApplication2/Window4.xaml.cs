@@ -26,8 +26,44 @@ namespace WpfApplication2
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            Window5 w = new Window5();
-            w.Show();
+            bool levelSelected = true;
+            if ((bool)veryActiveRadioButton.IsChecked)
+            {
+                Data.newUserActivity = "veryActive";
+            }
+            else if ((bool)activeRadioButton.IsChecked)
+            {
+                Data.newUserActivity = "active";
+            }
+            else if ((bool)lightlyActiveRadioButton.IsChecked)
+            {
+                Data.newUserActivity = "lightlyActive";
+            }
+            else if ((bool)notVeryActiveRadioButton.IsChecked)
+            {
+                Data.newUserActivity = "notVeryActive";
+            }
+            else
+            {
+                levelSelected = false;
+            }
+            if (levelSelected)
+            {
+                Window5 w = new Window5();
+                w.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Choose one!");
+            }
+        }
+
+        private void button_Copy_Click(object sender, RoutedEventArgs e)
+        {
+            var win = new Window3();
+            win.Show();
+            this.Close();
         }
     }
 }

@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication2"
         mc:Ignorable="d"
-        Title="Your history" Height="500" Width="350" ResizeMode="NoResize" Background="AntiqueWhite" WindowStartupLocation="CenterScreen">
+        Title="Your history" Height="500" Width="516.5" ResizeMode="NoResize" Background="AntiqueWhite" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Button x:Name="button_Copy1" Content="Back" HorizontalAlignment="Left" Margin="24,34,0,0" Width="65" Height="24" VerticalAlignment="Top" FontSize="14" Foreground="Brown">
+        <Button x:Name="button_Copy1" Content="Back" HorizontalAlignment="Left" Margin="24,34,0,0" Width="65" Height="24" VerticalAlignment="Top" FontSize="14" Foreground="Brown" Click="button_Copy1_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFB69898" Offset="0"/>
@@ -16,5 +16,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top" Height="366" Width="473"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="363,34,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="comboBox_SelectionChanged"/>
     </Grid>
 </Window>

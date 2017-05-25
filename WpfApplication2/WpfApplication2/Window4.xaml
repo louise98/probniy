@@ -17,15 +17,15 @@
             </Button.Background>
         </Button>
         <Label x:Name="label" Content="How active are you?" HorizontalAlignment="Left" Margin="46,52,0,0" VerticalAlignment="Top" FontSize="18" Foreground="Brown"/>
-        <RadioButton x:Name="radioButton" Content="Very active" HorizontalAlignment="Left" Margin="46,101,0,0" VerticalAlignment="Top" Height="21" Width="141" FontSize="14" Foreground="Brown"/>
-        <RadioButton x:Name="radioButton1" Content="Active" HorizontalAlignment="Left" Margin="46,171,0,0" VerticalAlignment="Top" FontSize="14" Width="141" Foreground="Brown"/>
-        <RadioButton x:Name="radioButton2" Content="Lightly active" HorizontalAlignment="Left" Margin="46,246,0,0" VerticalAlignment="Top" FontSize="14" Width="141" Foreground="Brown"/>
-        <RadioButton x:Name="radioButton3" Content="Not very active" HorizontalAlignment="Left" Margin="46,321,0,0" VerticalAlignment="Top" Height="23" Width="141" FontSize="14" Foreground="Brown"/>
+        <RadioButton x:Name="veryActiveRadioButton" Content="Very active" HorizontalAlignment="Left" Margin="46,101,0,0" VerticalAlignment="Top" Height="21" Width="141" FontSize="14" Foreground="Brown"/>
+        <RadioButton x:Name="activeRadioButton" Content="Active" HorizontalAlignment="Left" Margin="46,171,0,0" VerticalAlignment="Top" FontSize="14" Width="141" Foreground="Brown"/>
+        <RadioButton x:Name="lightlyActiveRadioButton" Content="Lightly active" HorizontalAlignment="Left" Margin="46,246,0,0" VerticalAlignment="Top" FontSize="14" Width="141" Foreground="Brown"/>
+        <RadioButton x:Name="notVeryActiveRadioButton" Content="Not very active" HorizontalAlignment="Left" Margin="46,321,0,0" VerticalAlignment="Top" Height="23" Width="141" FontSize="14" Foreground="Brown"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="44,122,0,0" TextWrapping="Wrap" Text="Spend most of the day doing heavy physical activity (e.g. bike messenger, carpenter)" VerticalAlignment="Top" Height="44" Width="261" Foreground="Gray"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="38" Margin="46,190,0,0" TextWrapping="Wrap" Text="Spend a god part of the day doing some physical activity(e.g. food server, postal carrier)" VerticalAlignment="Top" Width="259" Foreground="Gray"/>
         <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="44,265,0,0" TextWrapping="Wrap" Text="Spend a good part of the day on your feet(e.g. teacher salesperson)" VerticalAlignment="Top" Height="36" Width="261" Foreground="Gray"/>
         <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="44,344,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="261" Foreground="Gray" Text="Spend most of the day sitting(e.g. bank teller. desk job)"/>
-        <Button x:Name="button_Copy" Content="Back" HorizontalAlignment="Left" Margin="24,26,0,0" Width="65" Height="24" Click="button_Click" VerticalAlignment="Top" FontSize="14" Foreground="Brown">
+        <Button x:Name="button_Copy" Content="Back" HorizontalAlignment="Left" Margin="24,26,0,0" Width="65" Height="24" VerticalAlignment="Top" FontSize="14" Foreground="Brown" Click="button_Copy_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFB69898" Offset="0"/>

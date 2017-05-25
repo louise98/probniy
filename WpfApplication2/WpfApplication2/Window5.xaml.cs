@@ -26,9 +26,48 @@ namespace WpfApplication2
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            Window6 w = new Window6();
-            w.Show();
+            bool genderPicked = true;
+            bool birthdayPicked = true;
+            if ((bool)maleRadioButton.IsChecked)
+            {
+                Data.newUserGender = "male";
+            }
+            else if ((bool)femaleRadioButton1.IsChecked)
+            {
+                Data.newUserGender = "female";
+            }
+            else
+            {
+                genderPicked = false;
+            }
+            if (birthDatePicker.SelectedDate != null)
+            {
+                Data.newUserBirthday = (DateTime)birthDatePicker.SelectedDate;
+            }
+            else
+            {
+                birthdayPicked = false;
+            }
 
+            if (genderPicked && birthdayPicked)
+            {
+                Window6 w = new Window6();
+                w.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Please choose!");
+            }
+            
+
+        }
+
+        private void button_Copy_Click(object sender, RoutedEventArgs e)
+        {
+            var win = new Window4();
+            win.Show();
+            this.Close();
         }
     }
 }

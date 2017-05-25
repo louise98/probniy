@@ -26,9 +26,37 @@ namespace WpfApplication2
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            Window4 w = new Window4();
-            w.Show();
+            bool goalSet = true;
+            if ((bool)loseRadioButton.IsChecked)
+            {
+                Data.newUserGoal = "lose";
+            }
+            else if ((bool)maintainRadioButton.IsChecked)
+            {
+                Data.newUserGoal = "maintain";
+            }
+            else if ((bool)gainRadioButton.IsChecked)
+            {
+                Data.newUserGoal = "gain";
+            }
+            else
+            {
+                MessageBox.Show("Choose a goal!");
+                goalSet = false;
+            }
+            if (goalSet)
+            {
+                Window4 w = new Window4();
+                w.Show();
+                this.Close();
+            }
+        }
 
+        private void button_Copy_Click(object sender, RoutedEventArgs e)
+        {
+            var win = new Window2();
+            win.Show();
+            this.Close();
         }
     }
 }

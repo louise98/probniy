@@ -23,7 +23,7 @@
         <Label x:Name="label" Content="Your name" HorizontalAlignment="Left" Margin="26,107,0,0" VerticalAlignment="Top" FontSize="16" Foreground="Brown"/>
         <Label x:Name="label1" Content="Your password" HorizontalAlignment="Left" Margin="24,150,0,0" VerticalAlignment="Top" FontSize="16" Foreground="Brown"/>
         <Label x:Name="label2" Content="Repeat password" HorizontalAlignment="Left" Margin="24,191,0,0" VerticalAlignment="Top" FontSize="16" Foreground="Brown"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="164,113,0,0" TextWrapping="Wrap" Text="ex.: Michael" VerticalAlignment="Top" Width="120" GotFocus="textBox_GotFocus" LostFocus="textBox_LostFocus">
+        <TextBox x:Name="nameTextBox" HorizontalAlignment="Left" Height="23" Margin="164,113,0,0" TextWrapping="Wrap" Text="ex.: Michael" VerticalAlignment="Top" Width="120" GotFocus="textBox_GotFocus" LostFocus="textBox_LostFocus">
             <TextBox.Resources>
                 <Color x:Key="Color3">Gray</Color>
             </TextBox.Resources>
@@ -32,8 +32,8 @@
             </TextBox.Foreground>
         </TextBox>
         <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="164,150,0,0" VerticalAlignment="Top" Width="120"/>
-        <PasswordBox x:Name="passwordBox1" HorizontalAlignment="Left" Margin="164,195,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.486,0.414"/>
-        <Button x:Name="button_Copy" Content="Back" HorizontalAlignment="Left" Margin="24,34,0,0" Width="65" Height="24" Click="button_Click" VerticalAlignment="Top" FontSize="14" Foreground="Brown">
+        <PasswordBox x:Name="repeatPasswordBox" HorizontalAlignment="Left" Margin="164,195,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.486,0.414"/>
+        <Button x:Name="button_Copy" Content="Back" HorizontalAlignment="Left" Margin="24,34,0,0" Width="65" Height="24" VerticalAlignment="Top" FontSize="14" Foreground="Brown" Click="button_Copy_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFB69898" Offset="0"/>

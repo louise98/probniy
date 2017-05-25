@@ -17,10 +17,10 @@
             </Button.Background>
         </Button>
         <Label x:Name="label" Content="What is your goal?" HorizontalAlignment="Left" Margin="39,98,0,0" VerticalAlignment="Top" FontSize="18" Foreground="Brown"/>
-        <RadioButton x:Name="radioButton" Content="Lose weight" HorizontalAlignment="Left" Margin="68,163,0,0" VerticalAlignment="Top" Height="21" Width="141" FontSize="14" Foreground="Brown"/>
-        <RadioButton x:Name="radioButton1" Content="Maintain weight" HorizontalAlignment="Left" Margin="68,207,0,0" VerticalAlignment="Top" FontSize="14" Foreground="Brown"/>
-        <RadioButton x:Name="radioButton2" Content="Gain weight" HorizontalAlignment="Left" Margin="68,252,0,0" VerticalAlignment="Top" FontSize="14" Foreground="Brown"/>
-        <Button x:Name="button_Copy" Content="Back" HorizontalAlignment="Left" Margin="24,34,0,0" Width="65" Height="24" Click="button_Click" VerticalAlignment="Top" FontSize="14" Foreground="Brown">
+        <RadioButton x:Name="loseRadioButton" Content="Lose weight" HorizontalAlignment="Left" Margin="68,163,0,0" VerticalAlignment="Top" Height="21" Width="141" FontSize="14" Foreground="Brown"/>
+        <RadioButton x:Name="maintainRadioButton" Content="Maintain weight" HorizontalAlignment="Left" Margin="68,207,0,0" VerticalAlignment="Top" FontSize="14" Foreground="Brown"/>
+        <RadioButton x:Name="gainRadioButton" Content="Gain weight" HorizontalAlignment="Left" Margin="68,252,0,0" VerticalAlignment="Top" FontSize="14" Foreground="Brown"/>
+        <Button x:Name="button_Copy" Content="Back" HorizontalAlignment="Left" Margin="24,34,0,0" Width="65" Height="24" VerticalAlignment="Top" FontSize="14" Foreground="Brown" Click="button_Copy_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFB69898" Offset="0"/>

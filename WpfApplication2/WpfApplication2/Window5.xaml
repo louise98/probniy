@@ -17,12 +17,12 @@
             </Button.Background>
         </Button>
         <Label x:Name="label" Content="Gender" HorizontalAlignment="Left" Margin="61,80,0,0" VerticalAlignment="Top" FontSize="18" Foreground="Brown"/>
-        <RadioButton x:Name="radioButton" Content="Male" HorizontalAlignment="Left" Margin="60,131,0,0" VerticalAlignment="Top" Height="21" Width="141" FontSize="14" Foreground="Brown"/>
-        <RadioButton x:Name="radioButton1" Content="Female" HorizontalAlignment="Left" Margin="60,175,0,0" VerticalAlignment="Top" FontSize="14" Foreground="Brown"/>
+        <RadioButton x:Name="maleRadioButton" Content="Male" HorizontalAlignment="Left" Margin="60,131,0,0" VerticalAlignment="Top" Height="21" Width="141" FontSize="14" Foreground="Brown"/>
+        <RadioButton x:Name="femaleRadioButton1" Content="Female" HorizontalAlignment="Left" Margin="60,175,0,0" VerticalAlignment="Top" FontSize="14" Foreground="Brown"/>
         <Label x:Name="label_Copy" Content="Birthdate" HorizontalAlignment="Left" Margin="61,224,0,0" VerticalAlignment="Top" FontSize="18" Foreground="Brown"/>
-        <DatePicker HorizontalAlignment="Left" Margin="60,263,0,0" VerticalAlignment="Top" Width="189" Height="31"/>
+        <DatePicker x:Name="birthDatePicker" HorizontalAlignment="Left" Margin="60,263,0,0" VerticalAlignment="Top" Width="189" Height="31"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="60,299,0,0" TextWrapping="Wrap" Text="We use this information to calculate an accurate callorie goal for you" VerticalAlignment="Top" Height="40" Width="241" Foreground="Gray"/>
-        <Button x:Name="button_Copy" Content="Back" HorizontalAlignment="Left" Margin="24,34,0,0" Width="65" Height="24" Click="button_Click" VerticalAlignment="Top" FontSize="14" Foreground="Brown">
+        <Button x:Name="button_Copy" Content="Back" HorizontalAlignment="Left" Margin="24,34,0,0" Width="65" Height="24" VerticalAlignment="Top" FontSize="14" Foreground="Brown" Click="button_Copy_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFB69898" Offset="0"/>

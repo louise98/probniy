@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication2"
         mc:Ignorable="d"
-        Title="Your progress" Height="500" Width="350" ResizeMode="NoResize" Background="AntiqueWhite" WindowStartupLocation="CenterScreen">
+        Title="Your progress" Height="440.496" Width="476.447" ResizeMode="NoResize" Background="AntiqueWhite" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Button x:Name="button_Copy1" Content="Back" HorizontalAlignment="Left" Margin="24,34,0,0" Width="65" Height="24" VerticalAlignment="Top" FontSize="14" Foreground="Brown">
+        <Button x:Name="button_Copy1" Content="Back" HorizontalAlignment="Left" Margin="24,34,0,0" Width="65" Height="24" VerticalAlignment="Top" FontSize="14" Foreground="Brown" Click="button_Copy1_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFB69898" Offset="0"/>
@@ -16,6 +16,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="48" Margin="63,355,0,0" TextWrapping="Wrap" Text="Congratulations! You gained/lost ...kg of weight!" VerticalAlignment="Top" Width="221" FontSize="16" Foreground="Brown"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="311" Margin="24,75,0,0" VerticalAlignment="Top" Width="428"/>
+        <Label x:Name="label" Content="Consumed calories by day of year in current year" HorizontalAlignment="Left" Margin="131,32,0,0" VerticalAlignment="Top" Width="310" RenderTransformOrigin="0.499,0.21"/>
     </Grid>
 </Window>

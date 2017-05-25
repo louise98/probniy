@@ -23,20 +23,32 @@ namespace WpfApplication2
         public MainWindow()
         {
             InitializeComponent();
+            HelperFunctions.deserUsers();
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            
             Window2 w = new Window2();
             w.Show();
-           //this.Hide();
+           this.Close();
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            Window7 w = new Window7();
-            w.Show();
+            String name = nameTextBox.Text;
+            String password = passwordBox.Password;
+            foreach(User user in Data.users)
+            {
+                if (user.Name == name && user.shouldLogin(password))
+                {
+                    Data.currentUser = user;
+                    Window7 w = new Window7();
+                    w.Show();
+                    this.Close();
+                    return;
+                }
+            }
+            MessageBox.Show("No such user with such password!");
         }
     }
 }

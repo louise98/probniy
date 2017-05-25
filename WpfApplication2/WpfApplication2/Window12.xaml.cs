@@ -23,5 +23,49 @@ namespace WpfApplication2
         {
             InitializeComponent();
         }
+
+        private void addButton_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                String name = nameTextBox.Text;
+                int netValue = Int32.Parse(netValueTextBox.Text);
+
+                Meal newMeal = new Meal(name, netValue);
+                Data.meals.Add(newMeal);
+                MessageBox.Show("New meal added!");
+                HelperFunctions.serUsers();
+                var win = new Window9();
+                win.Show();
+                this.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Please enter correct data!");
+            }
+
+
+        }
+
+        private void button_Copy1_Click(object sender, RoutedEventArgs e)
+        {
+            var win = new Window9();
+            win.Show();
+            this.Close();
+        }
+
+        private void nameTextBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            nameTextBox.Text = "";
+            var bc = new BrushConverter();
+            nameTextBox.Foreground = (Brush)bc.ConvertFrom("#FF000000");
+        }
+
+        private void netValueTextBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            netValueTextBox.Text = "";
+            var bc = new BrushConverter();
+            netValueTextBox.Foreground = (Brush)bc.ConvertFrom("#FF000000");
+        }
     }
 }

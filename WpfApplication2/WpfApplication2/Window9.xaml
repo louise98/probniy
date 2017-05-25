@@ -16,8 +16,8 @@
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
-        <DatePicker HorizontalAlignment="Left" Margin="166,215,0,0" VerticalAlignment="Top" Height="33" Width="140"/>
-        <Button x:Name="button" Content="Add" HorizontalAlignment="Left" Margin="107,397,0,0" VerticalAlignment="Top" Width="116" Height="33" FontSize="14" Foreground="Brown">
+        <DatePicker x:Name="datePicker" HorizontalAlignment="Left" Margin="166,215,0,0" VerticalAlignment="Top" Height="33" Width="140"/>
+        <Button x:Name="button" Content="Add" HorizontalAlignment="Left" Margin="107,397,0,0" VerticalAlignment="Top" Width="116" Height="33" FontSize="14" Foreground="Brown" Click="button_Click_1">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFB69898" Offset="0"/>
@@ -47,7 +47,7 @@
             </Button.Background>
         </Button>
         <Label x:Name="label1_Copy" Content="Amount consumed" HorizontalAlignment="Left" Margin="12,155,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.488,0.623" Width="149" Height="37" FontSize="16" Foreground="Brown"/>
-        <ComboBox x:Name="comboBox_Copy" HorizontalAlignment="Left" Margin="166,96,0,0" VerticalAlignment="Top" Width="134" Height="32">
+        <ComboBox x:Name="mealsCombo" HorizontalAlignment="Left" Margin="166,96,0,0" VerticalAlignment="Top" Width="134" Height="32">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFB69898" Offset="0"/>
@@ -56,7 +56,7 @@
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
-        <ComboBox x:Name="comboBox_Copy1" HorizontalAlignment="Left" Margin="166,155,0,0" VerticalAlignment="Top" Width="134" Height="29" RenderTransformOrigin="0.477,2.379">
+        <ComboBox x:Name="amountsCombo" HorizontalAlignment="Left" Margin="166,155,0,0" VerticalAlignment="Top" Width="134" Height="29" RenderTransformOrigin="0.477,2.379">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFB69898" Offset="0"/>

@@ -22,18 +22,59 @@ namespace WpfApplication2
         public Window8()
         {
             InitializeComponent();
+            nameTextBox.Text = Data.currentUser.Name;
+            heightTextBox.Text = Data.currentUser.Height.ToString();
+            birthdayDatePicker.SelectedDate = Data.currentUser.Birthday;
+            if(Data.currentUser._gender == Gender.male)
+            {
+                maleRadioButton.IsChecked = true;
+            }
+            else
+            {
+                femaleRadioButton.IsChecked = true;
+            }
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            
+            String oldUsername = Data.currentUser.Name;
+            String name = nameTextBox.Text;
+            if (HelperFunctions.validateUsername(name))
+            {
+                Data.currentUser.Name = name;
+            }
+            try
+            {
+                int height = Int32.Parse(heightTextBox.Text);
+                if (HelperFunctions.validateHeight(height))
+                {
+                    Data.currentUser.Height = height;
+                }
+            } catch { }
+            Gender? gender = null;
+            if ((bool)maleRadioButton.IsChecked)
+            {
+                gender = Gender.male;
+            }
+            if ((bool)femaleRadioButton.IsChecked)
+            {
+                gender = Gender.female;
+            }
+            if(gender != null)
+            {
+                Data.currentUser._gender = (Gender)gender;
+            }
 
+            DateTime? birthday = birthdayDatePicker.SelectedDate;
+            if(birthday != null)
+            {
+                Data.currentUser.Birthday = (DateTime)birthday;
+            }
 
-        }
-
-        private void comboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
+            HelperFunctions.serUsers();
+            Window7 w = new Window7();
+            w.Show();
+            this.Close();
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
@@ -46,6 +87,36 @@ namespace WpfApplication2
         {
             Window9 w = new Window9();
             w.Show();
+        }
+
+        private void backButton_Click(object sender, RoutedEventArgs e)
+        {
+            var win = new Window7();
+            win.Show();
+            this.Close();
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            var index = -1;
+            for(int i=0; i<Data.users.Count; i++)
+            {
+                if(Data.users[i] == Data.currentUser)
+                {
+                    index = i;
+                    break;
+                }
+            }
+            if(index != -1)
+            {
+                Data.users.RemoveAt(index);
+                HelperFunctions.serUsers();
+                var win = new MainWindow();
+                win.Show();
+                this.Close();
+
+            }
+            
         }
     }
 }
